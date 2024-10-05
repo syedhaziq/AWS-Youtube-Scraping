@@ -1,0 +1,20 @@
+[2024-10-03T12:13:42.781+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T12:13:42.807+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: youtube_pipeline.s3_upload manual__2024-10-03T12:13:13.448903+00:00 [queued]>
+[2024-10-03T12:13:42.829+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: youtube_pipeline.s3_upload manual__2024-10-03T12:13:13.448903+00:00 [queued]>
+[2024-10-03T12:13:42.832+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-03T12:13:42.857+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): s3_upload> on 2024-10-03 12:13:13.448903+00:00
+[2024-10-03T12:13:42.866+0000] {standard_task_runner.py:72} INFO - Started process 78 to run task
+[2024-10-03T12:13:42.872+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'youtube_pipeline', 's3_upload', 'manual__2024-10-03T12:13:13.448903+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/youtube_dag.py', '--cfg-path', '/tmp/tmpp3f39gb1']
+[2024-10-03T12:13:42.877+0000] {standard_task_runner.py:105} INFO - Job 7: Subtask s3_upload
+[2024-10-03T12:13:42.957+0000] {task_command.py:467} INFO - Running <TaskInstance: youtube_pipeline.s3_upload manual__2024-10-03T12:13:13.448903+00:00 [running]> on host 4d91c6c5073f
+[2024-10-03T12:13:43.063+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Haziq' AIRFLOW_CTX_DAG_ID='youtube_pipeline' AIRFLOW_CTX_TASK_ID='s3_upload' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T12:13:13.448903+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T12:13:13.448903+00:00'
+[2024-10-03T12:13:43.068+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T12:13:43.101+0000] {logging_mixin.py:190} INFO - connected successfully to s3
+[2024-10-03T12:13:46.622+0000] {logging_mixin.py:190} INFO - bucket already exist
+[2024-10-03T12:13:50.102+0000] {logging_mixin.py:190} INFO - Access Denied
+[2024-10-03T12:13:50.104+0000] {python.py:240} INFO - Done. Returned value was: /opt/airflow/data/output
+[2024-10-03T12:13:50.130+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T12:13:50.133+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=youtube_pipeline, task_id=s3_upload, run_id=manual__2024-10-03T12:13:13.448903+00:00, execution_date=20241003T121313, start_date=20241003T121342, end_date=20241003T121350
+[2024-10-03T12:13:50.178+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T12:13:50.196+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T12:13:50.201+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

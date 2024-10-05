@@ -1,0 +1,20 @@
+[2024-10-01T16:12:24.544+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-01T16:12:24.558+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_pipeline.s3_upload manual__2024-10-01T16:12:13.441764+00:00 [queued]>
+[2024-10-01T16:12:24.567+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_pipeline.s3_upload manual__2024-10-01T16:12:13.441764+00:00 [queued]>
+[2024-10-01T16:12:24.569+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-01T16:12:24.581+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): s3_upload> on 2024-10-01 16:12:13.441764+00:00
+[2024-10-01T16:12:24.586+0000] {standard_task_runner.py:72} INFO - Started process 118 to run task
+[2024-10-01T16:12:24.588+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_pipeline', 's3_upload', 'manual__2024-10-01T16:12:13.441764+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmp_7qb4lwo']
+[2024-10-01T16:12:24.592+0000] {standard_task_runner.py:105} INFO - Job 48: Subtask s3_upload
+[2024-10-01T16:12:24.629+0000] {task_command.py:467} INFO - Running <TaskInstance: reddit_pipeline.s3_upload manual__2024-10-01T16:12:13.441764+00:00 [running]> on host 0e63f9394fb3
+[2024-10-01T16:12:24.692+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Haziq' AIRFLOW_CTX_DAG_ID='reddit_pipeline' AIRFLOW_CTX_TASK_ID='s3_upload' AIRFLOW_CTX_EXECUTION_DATE='2024-10-01T16:12:13.441764+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-01T16:12:13.441764+00:00'
+[2024-10-01T16:12:24.694+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-01T16:12:24.708+0000] {logging_mixin.py:190} INFO - connected successfully to s3
+[2024-10-01T16:12:26.580+0000] {logging_mixin.py:190} INFO - The AWS Access Key Id you provided does not exist in our records.
+[2024-10-01T16:12:26.788+0000] {logging_mixin.py:190} INFO - The AWS Access Key Id you provided does not exist in our records.
+[2024-10-01T16:12:26.790+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-01T16:12:26.802+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-01T16:12:26.804+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=reddit_pipeline, task_id=s3_upload, run_id=manual__2024-10-01T16:12:13.441764+00:00, execution_date=20241001T161213, start_date=20241001T161224, end_date=20241001T161226
+[2024-10-01T16:12:26.851+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-01T16:12:26.865+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-01T16:12:26.867+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

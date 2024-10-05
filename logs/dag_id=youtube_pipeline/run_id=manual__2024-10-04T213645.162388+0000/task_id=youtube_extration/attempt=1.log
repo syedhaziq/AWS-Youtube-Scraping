@@ -1,0 +1,22 @@
+[2024-10-04T21:36:46.863+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-04T21:36:46.891+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: youtube_pipeline.youtube_extration manual__2024-10-04T21:36:45.162388+00:00 [queued]>
+[2024-10-04T21:36:46.906+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: youtube_pipeline.youtube_extration manual__2024-10-04T21:36:45.162388+00:00 [queued]>
+[2024-10-04T21:36:46.908+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-04T21:36:46.926+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): youtube_extration> on 2024-10-04 21:36:45.162388+00:00
+[2024-10-04T21:36:46.939+0000] {standard_task_runner.py:72} INFO - Started process 58 to run task
+[2024-10-04T21:36:46.943+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'youtube_pipeline', 'youtube_extration', 'manual__2024-10-04T21:36:45.162388+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/youtube_dag.py', '--cfg-path', '/tmp/tmpmmmzel5d']
+[2024-10-04T21:36:46.949+0000] {standard_task_runner.py:105} INFO - Job 3: Subtask youtube_extration
+[2024-10-04T21:36:47.026+0000] {task_command.py:467} INFO - Running <TaskInstance: youtube_pipeline.youtube_extration manual__2024-10-04T21:36:45.162388+00:00 [running]> on host 4715c926778f
+[2024-10-04T21:36:47.127+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Haziq' AIRFLOW_CTX_DAG_ID='youtube_pipeline' AIRFLOW_CTX_TASK_ID='youtube_extration' AIRFLOW_CTX_EXECUTION_DATE='2024-10-04T21:36:45.162388+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-04T21:36:45.162388+00:00'
+[2024-10-04T21:36:47.129+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-04T21:36:47.147+0000] {__init__.py:49} INFO - file_cache is only supported with oauth2client<4.0.0
+[2024-10-04T21:36:49.106+0000] {logging_mixin.py:190} INFO - playlist id isUUX6OQ3DkcsbYNE6H8uQQuVA
+[2024-10-04T21:38:46.473+0000] {http.py:140} WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+[2024-10-04T21:38:46.476+0000] {logging_mixin.py:190} INFO - <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=statistics%2Csnippet%2CcontentDetails&id=7ALCsEyn3mg&key=AIzaSyBE16xeNvwouRgDBDDzl9KWo-AIq4kAe3o&alt=json returned "The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.". Details: "[{'message': 'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.', 'domain': 'youtube.quota', 'reason': 'quotaExceeded'}]">
+[2024-10-04T21:38:46.477+0000] {logging_mixin.py:190} INFO - {'viewCount': '60065943543', 'subscriberCount': '318000000', 'videoCount': '819'}
+[2024-10-04T21:38:46.506+0000] {python.py:240} INFO - Done. Returned value was: /opt/airflow/data/output
+[2024-10-04T21:38:46.537+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-04T21:38:46.540+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=youtube_pipeline, task_id=youtube_extration, run_id=manual__2024-10-04T21:36:45.162388+00:00, execution_date=20241004T213645, start_date=20241004T213646, end_date=20241004T213846
+[2024-10-04T21:38:46.599+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-04T21:38:46.624+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-04T21:38:46.628+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
