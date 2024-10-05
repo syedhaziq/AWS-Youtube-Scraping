@@ -23,7 +23,7 @@ from etls.youtube_etl import lets_connect, channel_extract,stats_extract,top_vid
 
 def youtube_extration():
 
-    connection = lets_connect('AIzaSyCb2oCuwtztnjkwUikat91kIQc_cAFVHyA')
+    connection = lets_connect(SECRET)
     channels = channel_extract(connection, 'MrBeast')
     views_stats = stats_extract(connection,channels)
     top_videos = top_videos_extraction(connection, channels)
