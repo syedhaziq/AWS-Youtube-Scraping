@@ -2,4 +2,6 @@ venv
 *.conf
 logs
 .idea
+tests
+plugins
 __pycache__
