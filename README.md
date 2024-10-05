@@ -22,9 +22,13 @@ This project is a data pipeline designed to Extract, Transform, and Load (ETL) d
                 - Total comments
         - The extracted data is saved as CSV files in a specified airflow directory which is mounted to the local directory.
 
-- Data Ingestion::
+- Data Ingestion:
     - The data extraction process described above feeds directly into data ingestion. As aws_etl_youtube.py uploads the CSV files to the S3 bucket's "raw" folder, the data becomes readily available for subsequent stages in the pipeline.
 
 - Data Orchestration:
-    - Apache Airflow is used to orchestrate the entire ETL process, scheduling tasks and managing dependencies.
+    - Apache Airflow is used to orchestrate the entire ETL process, scheduling tasks and managing dependencies.It can be deployed locally or in the cloud for scalability and reliability.
+
+- Data Transformation:
+    - AWS Glue notebook is employed to transform the raw data. This calculating basic statistics (e.g., average view count, avgerage likes, and average comment) and then merging with one of the spark dataframes.
+    - The transformed data is saved as CSV files in an transformed folder on S3.
 
