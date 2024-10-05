@@ -12,8 +12,6 @@ This project is a data pipeline designed to Extract, Transform, and Load (ETL) d
         - It extracts information such as:
             - Video-level data:
                 - Video titles
-                - Descriptions
-                - Publication dates
                 - View counts
                 - Like counts
                 - Comment counts
