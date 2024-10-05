@@ -9,17 +9,17 @@ x-airflow-common:
   env_file:
     - airflow.env
   volumes:
-    - /c/Users/syed_/Downloads/reddit/config:/opt/airflow/config
-    - /c/Users/syed_/Downloads/reddit/dags:/opt/airflow/dags
-    - /c/Users/syed_/Downloads/reddit/data:/opt/airflow/data
-    - /c/Users/syed_/Downloads/reddit/etls:/opt/airflow/etls
-    - /c/Users/syed_/Downloads/reddit/logs:/opt/airflow/logs
-    - /c/Users/syed_/Downloads/reddit/pipelines:/opt/airflow/pipelines
-    - /c/Users/syed_/Downloads/reddit/plugins:/opt/airflow/plugins
-    - /c/Users/syed_/Downloads/reddit/tests:/opt/airflow/tests
-    - /c/Users/syed_/Downloads/reddit/utils:/opt/airflow/utils
+    - ./config:/opt/airflow/config
+    - ./dags:/opt/airflow/dags
+    - ./data:/opt/airflow/data
+    - ./etls:/opt/airflow/etls
+    - ./logs:/opt/airflow/logs
+    - ./pipelines:/opt/airflow/pipelines
+    - ./plugins:/opt/airflow/plugins
+    - ./tests:/opt/airflow/tests
+    - ./utils:/opt/airflow/utils
    # - ./airflow.cfg:/opt/airflow/airflow.cfg
-    - /c/Users/syed_/Downloads/reddit/venv/requirements.txt:/opt/airflow/requirements.txt
+    - ./venv/requirements.txt:/opt/airflow/requirements.txt
   depends_on:
     - postgres
     - redis

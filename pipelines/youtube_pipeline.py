@@ -4,22 +4,6 @@ from etls.youtube_etl import lets_connect, channel_extract,stats_extract,top_vid
 
 
 
-# youtube = build('youtube', 'v3', developerKey=SECRET)
-# #api = tweepy.API(auth)
-
-# try:
-#     request  = youtube.search().list(
-#         part='snippet',
-#         q= 'techTFQ',
-#         type= 'channel'
-#     )
-#     response = request.execute()
-#     # for item in response['items']:
-#     #     print(item)
-#     #     break
-#     print(response['items'][0]['id']['channelId'])
-# except Exception as e:
-#     print(e)
 
 def youtube_extration():
 
@@ -29,12 +13,12 @@ def youtube_extration():
     top_videos = top_videos_extraction(connection, channels)
 
     ### loading into csv ###
-    # path = load_into_csv([views_stats,top_videos], OUTPUT_PATH)
+    path = load_into_csv([views_stats,top_videos], OUTPUT_PATH)
 
-    return top_videos
+    return path
 
 
-a = youtube_extration()
-print(a)
+# a = youtube_extration()
+# print(a)
 # print(b)
     

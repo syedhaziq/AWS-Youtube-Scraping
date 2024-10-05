@@ -35,8 +35,8 @@ def upload_to_s3(s3, file_path,bucket):
         # return file_name   
 
         for file in os.listdir(file_path):
-            destination_path = os.path.join('s3-reddit-storage-haziq/','raw/',file)
-            # destination_path = 's3-reddit-storage-haziq/raw/top_videos_stats.csv'
+            destination_path = os.path.join(bucket,'raw/',file)
+            
             source_path = os.path.join(file_path,file)
             print(source_path)
             print(f'destination is {destination_path}')
