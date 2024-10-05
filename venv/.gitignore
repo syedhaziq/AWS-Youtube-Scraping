@@ -1,0 +1,8 @@
+venv
+*.conf
+logs
+.idea
+tests
+plugins
+C:\Users\syed_\Downloads\reddit\config\config_v2.conf
+__pycache__
