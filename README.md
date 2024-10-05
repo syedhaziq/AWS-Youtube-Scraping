@@ -35,4 +35,4 @@ This project is a data pipeline designed to Extract, Transform, and Load (ETL) d
 - Data Visualization:
     - Various BI tools (Power BI, QuickSight, Tableau, Looker Studio) can be used to visualize the data and create interactive dashboards.
 
-![My dashboard](https://github.com/syedhaziq/AWS-Youtube-Scraping/blob/main/youtube%20dasboard.png)
+![My dashboard](https://raw.githubusercontent.com/syedhaziq/AWS-Youtube-Scraping/refs/heads/main/youtube%20dasboard.png)
