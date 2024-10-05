@@ -11,12 +11,12 @@ This project is a data pipeline designed to Extract, Transform, and Load (ETL) d
         - This script utilizes the YouTube Data API to retrieve data from the MrBeast channel.
         - It extracts information such as:
             - Video-level data:
-                    Video titles
-                    Descriptions
-                    Publication dates
-                    View counts
-                    Like counts
-                    Comment counts
+                    - Video titles
+                    - Descriptions
+                    - Publication dates
+                    - View counts
+                    - Like counts
+                    - Comment counts
             - Channel-level data:
                     Subscriber count
                     Total likes
