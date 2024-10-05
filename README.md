@@ -32,3 +32,6 @@ This project is a data pipeline designed to Extract, Transform, and Load (ETL) d
     - AWS Glue notebook is employed to transform the raw data. This calculating basic statistics (e.g., average view count, avgerage likes, and average comment) and then merging with one of the spark dataframes.
     - The transformed data is saved as CSV files in the **`transformed`** folder on S3.
 
+- Data Visualization:
+    - Various BI tools (Power BI, QuickSight, Tableau, Looker Studio) can be used to visualize the data and create interactive dashboards.
+
