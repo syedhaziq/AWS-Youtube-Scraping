@@ -37,12 +37,6 @@ dag = DAG(
 extract = PythonOperator(
     task_id = 'youtube_extration',
     python_callable= youtube_extration,
-    # op_kwargs = {
-    #     'file_name': f'reddit_{file_postfix}',
-    #     'subreddit': 'dataengineering',
-    #     'time_filter': 'day',
-    #     'limit': 100
-    # },
     dag=dag
 )
 
