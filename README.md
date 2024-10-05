@@ -36,3 +36,11 @@ This project is a data pipeline designed to Extract, Transform, and Load (ETL) d
     - Various BI tools (Power BI, QuickSight, Tableau, Looker Studio) can be used to visualize the data and create interactive dashboards.
 
 ![My dashboard](https://raw.githubusercontent.com/syedhaziq/AWS-Youtube-Scraping/refs/heads/main/youtube%20dasboard.png)
+
+- Technologies:
+    - Python
+    - YouTube Data API
+    - AWS S3
+    - Apache Airflow
+    - AWS Glue
+    - Power BI
