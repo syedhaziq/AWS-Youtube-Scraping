@@ -8,7 +8,7 @@ This project is a data pipeline designed to Extract, Transform, and Load (ETL) d
 
 - Data Extration:
     - youtube_etl.py:
-        - This script utilizes the YouTube Data API to retrieve data from the MrBeast (can be change to other some other) channel.
+        - This script utilizes the YouTube Data API to retrieve data from the MrBeast (can be change to some other) channel.
         - It extracts information such as:
             - Video-level data:
                 - Video titles
