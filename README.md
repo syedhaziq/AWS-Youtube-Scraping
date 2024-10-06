@@ -4,6 +4,10 @@
 
 This project is a data pipeline designed to Extract, Transform, and Load (ETL) data from any YouTube channel. It allows you to analyze and visualize channel data to gain insights into its performance.
 
+## Architecture
+
+![My Architecture](https://raw.githubusercontent.com/syedhaziq/AWS-Youtube-Scraping/refs/heads/main/youtube%20dasboard.png)
+
 ## Data Flow
 
 - Data Extration:
