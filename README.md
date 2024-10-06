@@ -6,7 +6,7 @@ This project is a data pipeline designed to Extract, Transform, and Load (ETL) d
 
 ## Architecture
 
-![My Architecture](https://raw.githubusercontent.com/syedhaziq/AWS-Youtube-Scraping/refs/heads/main/youtube%20dasboard.png)
+![My Architecture](https://raw.githubusercontent.com/syedhaziq/AWS-Youtube-Scraping/refs/heads/main/architecture.png)
 
 ## Data Flow
 
